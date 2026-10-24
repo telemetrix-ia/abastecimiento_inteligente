@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Abastecimiento Inteligente · Demo</title>
+  <meta name="description" content="Demo del Agente de Abastecimiento Inteligente (RF-CORE-AI-06): chat de IA y órdenes de compra con aprobación y PIN.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231E293B'/%3E%3Cpath d='M16 7l7 9-7 9-7-9z' fill='%23E8A0BF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+  <script>
+    (function () { var t = "oscuro"; try { t = localStorage.getItem("tema") || "oscuro"; } catch (e) {}
+      if (t === "auto") t = matchMedia("(prefers-color-scheme: light)").matches ? "claro" : "oscuro";
+      document.documentElement.setAttribute("data-tema", t); })();
+  </script>
+</head>
+<body>
+  <div class="shell">
+    <header class="cabecera">
+      <button class="boton-icono menu-movil" id="btn-menu" aria-label="Abrir menú"></button>
+      <a class="marca" href="#/ia"><span class="marca-logo" aria-hidden="true">A</span><div><b id="marca-nombre">Aurora Accesorios</b><small>ERP · demo</small></div></a>
+      <div class="cab-centro"><span class="reloj" id="reloj" title="Hora simulada de la demo"><i></i><span>—</span></span></div>
+      <div class="cab-acciones">
+        <a class="boton-icono" href="#/ia" id="btn-ia" aria-label="Asistente IA" title="Asistente IA"></a>
+        <button class="boton-icono" id="btn-notif" aria-label="Notificaciones" title="Notificaciones"></button>
+        <button class="boton-icono" id="btn-tema" aria-label="Cambiar modo de apariencia" title="Modo de apariencia"></button>
+        <label class="usuario-sel" title="Cambiar de usuario (demo)">
+          <span class="avatar" id="usr-avatar">R</span>
+          <div><b id="usr-nombre">—</b><small id="usr-rol">—</small></div>
+          <select id="usr-select" aria-label="Usuario activo"></select>
+        </label>
+      </div>
+    </header>
+    <nav class="lateral" id="lateral" aria-label="Aplicaciones"></nav>
+    <main class="contenido" id="vista" tabindex="-1"></main>
+  </div>
+  <button class="panel-boton" id="btn-panel"></button>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

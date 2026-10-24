@@ -1,0 +1,4784 @@
+{
+ "FECHA_REFERENCIA": "2026-10-22",
+ "TENANT": {
+  "tenant_id": "TEN-0007",
+  "razon_social": "Bisutería Aurora E.I.R.L. (ficticia)",
+  "nombre_comercial": "Aurora Accesorios",
+  "plan": "Intermedio",
+  "estado_suscripcion": "ACTIVE",
+  "incluye_modulo_oc": true,
+  "zona_horaria": "America/Lima",
+  "moneda": "PEN"
+ },
+ "CONFIGURACION": {
+  "addon_multi_agente_activo": true,
+  "agente_abastecimiento_activo": true,
+  "configurado_por": "U01",
+  "alcance_modo": "TODAS_CONSOLIDADO",
+  "sucursales_incluidas": [
+   "SUC-01",
+   "SUC-02"
+  ],
+  "restriccion_visualizacion_cruzada": true,
+  "ventana_consumo_dias": 30,
+  "dias_cobertura": 15,
+  "hora_corrida_programada": "21:00",
+  "ventana_plataforma": "20:00-06:00",
+  "ultima_corrida": "2026-10-21T21:00:00-05:00",
+  "saldo_creditos": 120,
+  "reserva_creditos_agentes": 20,
+  "limite_consultas_por_usuario": 30
+ },
+ "COSTOS_CREDITOS": {
+  "consulta_chat": 1,
+  "corrida_abastecimiento": 10
+ },
+ "SUCURSALES": [
+  {
+   "sucursal_id": "SUC-01",
+   "nombre": "Principal — Jr. Huallaga, Cercado de Lima",
+   "activa": true
+  },
+  {
+   "sucursal_id": "SUC-02",
+   "nombre": "Galería Gamarra — La Victoria",
+   "activa": true
+  }
+ ],
+ "ALMACENES": [
+  {
+   "almacen_id": "ALM-01",
+   "sucursal_id": "SUC-01",
+   "nombre": "Almacén Principal Huallaga"
+  },
+  {
+   "almacen_id": "ALM-02",
+   "sucursal_id": "SUC-02",
+   "nombre": "Almacén Gamarra"
+  }
+ ],
+ "USUARIOS": [
+  {
+   "usuario_id": "U01",
+   "nombre": "Rosa Quispe",
+   "rol": "Administrador",
+   "permisos": [
+    "ia.chat",
+    "stock.ver",
+    "compras.ver",
+    "compras.borrador_ia",
+    "costos.ver"
+   ],
+   "sucursales": [
+    "SUC-01",
+    "SUC-02"
+   ],
+   "activo": true
+  },
+  {
+   "usuario_id": "U02",
+   "nombre": "Lucía Torres",
+   "rol": "Encargada de sucursal",
+   "permisos": [
+    "ia.chat",
+    "stock.ver",
+    "compras.ver"
+   ],
+   "sucursales": [
+    "SUC-02"
+   ],
+   "activo": true
+  },
+  {
+   "usuario_id": "U03",
+   "nombre": "Jorge Ramos",
+   "rol": "Vendedor",
+   "permisos": [
+    "ia.chat",
+    "stock.ver"
+   ],
+   "sucursales": [
+    "SUC-01"
+   ],
+   "activo": true
+  }
+ ],
+ "PROVEEDORES": [
+  {
+   "proveedor_id": "PRV-01",
+   "razon_social": "Importaciones Perla Andina S.A.C.",
+   "ruc": "20600000011",
+   "canal_preferido": "whatsapp",
+   "activo": true
+  },
+  {
+   "proveedor_id": "PRV-02",
+   "razon_social": "Acero Brillante Perú E.I.R.L.",
+   "ruc": "20600000022",
+   "canal_preferido": "email",
+   "activo": true
+  },
+  {
+   "proveedor_id": "PRV-03",
+   "razon_social": "Abalorios y Textiles Gamarra S.A.C.",
+   "ruc": "20600000033",
+   "canal_preferido": "whatsapp",
+   "activo": true
+  },
+  {
+   "proveedor_id": "PRV-04",
+   "razon_social": "Platería Artesanal del Sur S.R.L.",
+   "ruc": "20600000044",
+   "canal_preferido": "email",
+   "activo": true
+  }
+ ],
+ "PRODUCTOS": [
+  {
+   "sku": "ARE-ACE-DOR",
+   "producto": "Aretes argolla acero",
+   "variante": "Dorado",
+   "categoria": "Aretes",
+   "precio_venta": 15.0,
+   "costo_referencia": 4.2,
+   "activo": true
+  },
+  {
+   "sku": "ARE-ACE-PLA",
+   "producto": "Aretes argolla acero",
+   "variante": "Plateado",
+   "categoria": "Aretes",
+   "precio_venta": 15.0,
+   "costo_referencia": 4.2,
+   "activo": true
+  },
+  {
+   "sku": "COL-PER-BLA",
+   "producto": "Collar de perlas sintéticas",
+   "variante": "Blanco",
+   "categoria": "Collares",
+   "precio_venta": 35.0,
+   "costo_referencia": 11.5,
+   "activo": true
+  },
+  {
+   "sku": "COL-PER-ROS",
+   "producto": "Collar de perlas sintéticas",
+   "variante": "Rosado",
+   "categoria": "Collares",
+   "precio_venta": 35.0,
+   "costo_referencia": 11.5,
+   "activo": true
+  },
+  {
+   "sku": "PUL-HIL-ROJ",
+   "producto": "Pulsera de hilo rojo",
+   "variante": "Rojo",
+   "categoria": "Pulseras",
+   "precio_venta": 8.0,
+   "costo_referencia": 1.8,
+   "activo": true
+  },
+  {
+   "sku": "PUL-ACE-DOR",
+   "producto": "Pulsera eslabones acero",
+   "variante": "Dorado",
+   "categoria": "Pulseras",
+   "precio_venta": 25.0,
+   "costo_referencia": 7.9,
+   "activo": true
+  },
+  {
+   "sku": "ANI-PLA-AJU",
+   "producto": "Anillo plata 950 ajustable",
+   "variante": "Único",
+   "categoria": "Anillos",
+   "precio_venta": 45.0,
+   "costo_referencia": 18.0,
+   "activo": true
+  },
+  {
+   "sku": "ANI-ACE-T7",
+   "producto": "Anillo acero liso",
+   "variante": "Talla 7",
+   "categoria": "Anillos",
+   "precio_venta": 12.0,
+   "costo_referencia": 3.1,
+   "activo": true
+  },
+  {
+   "sku": "ANI-ACE-T8",
+   "producto": "Anillo acero liso",
+   "variante": "Talla 8",
+   "categoria": "Anillos",
+   "precio_venta": 12.0,
+   "costo_referencia": 3.1,
+   "activo": true
+  },
+  {
+   "sku": "TOB-CON-MUL",
+   "producto": "Tobillera de conchitas",
+   "variante": "Multicolor",
+   "categoria": "Tobilleras",
+   "precio_venta": 10.0,
+   "costo_referencia": 2.4,
+   "activo": true
+  },
+  {
+   "sku": "DIJ-LET-DOR",
+   "producto": "Dije inicial",
+   "variante": "Dorado",
+   "categoria": "Dijes",
+   "precio_venta": 18.0,
+   "costo_referencia": 5.5,
+   "activo": true
+  },
+  {
+   "sku": "SET-NOV-PLA",
+   "producto": "Set novia aretes + collar",
+   "variante": "Plateado",
+   "categoria": "Sets",
+   "precio_venta": 89.0,
+   "costo_referencia": 32.0,
+   "activo": true
+  },
+  {
+   "sku": "CAD-ACE-45",
+   "producto": "Cadena acero 45 cm",
+   "variante": "Dorado",
+   "categoria": "Cadenas",
+   "precio_venta": 20.0,
+   "costo_referencia": 6.0,
+   "activo": true
+  },
+  {
+   "sku": "BRO-PEL-GRA",
+   "producto": "Broche de pelo con perlas",
+   "variante": "Grande",
+   "categoria": "Accesorios de cabello",
+   "precio_venta": 9.0,
+   "costo_referencia": 2.2,
+   "activo": true
+  },
+  {
+   "sku": "ARE-RES-MUL",
+   "producto": "Aretes de resina flores",
+   "variante": "Multicolor",
+   "categoria": "Aretes",
+   "precio_venta": 12.0,
+   "costo_referencia": 3.5,
+   "activo": true
+  },
+  {
+   "sku": "COL-CUA-ROS",
+   "producto": "Collar cuarzo rosado",
+   "variante": "Natural",
+   "categoria": "Collares",
+   "precio_venta": 55.0,
+   "costo_referencia": 21.0,
+   "activo": true
+  }
+ ],
+ "STOCK": [
+  {
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 6,
+   "stock_minimo": 20
+  },
+  {
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 28,
+   "stock_minimo": 15
+  },
+  {
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 9,
+   "stock_minimo": 20
+  },
+  {
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 22,
+   "stock_minimo": 15
+  },
+  {
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 4,
+   "stock_minimo": 10
+  },
+  {
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 12,
+   "stock_minimo": 8
+  },
+  {
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 14,
+   "stock_minimo": 8
+  },
+  {
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 70,
+   "stock_minimo": 40
+  },
+  {
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 18,
+   "stock_minimo": 40
+  },
+  {
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 3,
+   "stock_minimo": 8
+  },
+  {
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 143,
+   "stock_minimo": 30
+  },
+  {
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 25,
+   "stock_minimo": 10
+  },
+  {
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 5,
+   "stock_minimo": 12
+  },
+  {
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 16,
+   "stock_minimo": 12
+  },
+  {
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 7,
+   "stock_minimo": 15
+  },
+  {
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 40,
+   "stock_minimo": 15
+  },
+  {
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 6,
+   "stock_minimo": 3
+  },
+  {
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 26,
+   "stock_minimo": 12
+  },
+  {
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "stock_disponible": 30,
+   "stock_minimo": 10
+  },
+  {
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 2,
+   "stock_minimo": 10
+  },
+  {
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "stock_disponible": 9,
+   "stock_minimo": 4
+  }
+ ],
+ "VENTAS_DIARIAS": [
+  {
+   "fecha": "2026-09-07",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-07",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-07",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-07",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-07",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-07",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-08",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-09",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-10",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-11",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 7
+  },
+  {
+   "fecha": "2026-09-12",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-13",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-14",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-15",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-16",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-17",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-18",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 7
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-19",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-09-20",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-21",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-22",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-23",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-24",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-09-25",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-26",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-09-27",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-28",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-29",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-09-30",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-01",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-02",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-10-03",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-10-04",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-05",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-06",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-07",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-08",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-09",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-10-10",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 6
+  },
+  {
+   "fecha": "2026-10-11",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-12",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-13",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-14",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-15",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-10-16",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 7
+  },
+  {
+   "fecha": "2026-10-17",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 5
+  },
+  {
+   "fecha": "2026-10-18",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "COL-CUA-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "COL-PER-ROS",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-19",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 4
+  },
+  {
+   "fecha": "2026-10-20",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ANI-ACE-T8",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ANI-PLA-AJU",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "BRO-PEL-GRA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-01",
+   "cantidad": 2
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "cantidad": 3
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "SET-NOV-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad": 1
+  },
+  {
+   "fecha": "2026-10-21",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "cantidad": 1
+  }
+ ],
+ "COMPRAS_HISTORICAS": [
+  {
+   "compra_id": "CMP-0101",
+   "fecha": "2026-08-05",
+   "proveedor_id": "PRV-02",
+   "sku": "ARE-ACE-DOR",
+   "cantidad": 120,
+   "costo_unitario": 4.1
+  },
+  {
+   "compra_id": "CMP-0101",
+   "fecha": "2026-08-05",
+   "proveedor_id": "PRV-02",
+   "sku": "ARE-ACE-PLA",
+   "cantidad": 100,
+   "costo_unitario": 4.1
+  },
+  {
+   "compra_id": "CMP-0102",
+   "fecha": "2026-08-12",
+   "proveedor_id": "PRV-01",
+   "sku": "COL-PER-BLA",
+   "cantidad": 40,
+   "costo_unitario": 11.8
+  },
+  {
+   "compra_id": "CMP-0102",
+   "fecha": "2026-08-12",
+   "proveedor_id": "PRV-01",
+   "sku": "COL-PER-ROS",
+   "cantidad": 30,
+   "costo_unitario": 11.8
+  },
+  {
+   "compra_id": "CMP-0103",
+   "fecha": "2026-08-20",
+   "proveedor_id": "PRV-03",
+   "sku": "PUL-HIL-ROJ",
+   "cantidad": 300,
+   "costo_unitario": 1.7
+  },
+  {
+   "compra_id": "CMP-0103",
+   "fecha": "2026-08-20",
+   "proveedor_id": "PRV-03",
+   "sku": "TOB-CON-MUL",
+   "cantidad": 60,
+   "costo_unitario": 2.3
+  },
+  {
+   "compra_id": "CMP-0104",
+   "fecha": "2026-08-28",
+   "proveedor_id": "PRV-04",
+   "sku": "ANI-PLA-AJU",
+   "cantidad": 200,
+   "costo_unitario": 17.5
+  },
+  {
+   "compra_id": "CMP-0105",
+   "fecha": "2026-09-02",
+   "proveedor_id": "PRV-02",
+   "sku": "PUL-ACE-DOR",
+   "cantidad": 40,
+   "costo_unitario": 7.8
+  },
+  {
+   "compra_id": "CMP-0105",
+   "fecha": "2026-09-02",
+   "proveedor_id": "PRV-02",
+   "sku": "ANI-ACE-T7",
+   "cantidad": 50,
+   "costo_unitario": 3.0
+  },
+  {
+   "compra_id": "CMP-0105",
+   "fecha": "2026-09-02",
+   "proveedor_id": "PRV-02",
+   "sku": "ANI-ACE-T8",
+   "cantidad": 50,
+   "costo_unitario": 3.0
+  },
+  {
+   "compra_id": "CMP-0105",
+   "fecha": "2026-09-02",
+   "proveedor_id": "PRV-02",
+   "sku": "CAD-ACE-45",
+   "cantidad": 40,
+   "costo_unitario": 5.9
+  },
+  {
+   "compra_id": "CMP-0106",
+   "fecha": "2026-09-10",
+   "proveedor_id": "PRV-01",
+   "sku": "DIJ-LET-DOR",
+   "cantidad": 60,
+   "costo_unitario": 5.4
+  },
+  {
+   "compra_id": "CMP-0106",
+   "fecha": "2026-09-10",
+   "proveedor_id": "PRV-01",
+   "sku": "SET-NOV-PLA",
+   "cantidad": 10,
+   "costo_unitario": 31.5
+  },
+  {
+   "compra_id": "CMP-0107",
+   "fecha": "2026-09-18",
+   "proveedor_id": "PRV-03",
+   "sku": "COL-PER-BLA",
+   "cantidad": 30,
+   "costo_unitario": 11.2
+  },
+  {
+   "compra_id": "CMP-0107",
+   "fecha": "2026-09-18",
+   "proveedor_id": "PRV-03",
+   "sku": "BRO-PEL-GRA",
+   "cantidad": 50,
+   "costo_unitario": 2.1
+  },
+  {
+   "compra_id": "CMP-0108",
+   "fecha": "2026-09-25",
+   "proveedor_id": "PRV-04",
+   "sku": "COL-CUA-ROS",
+   "cantidad": 15,
+   "costo_unitario": 20.5
+  }
+ ],
+ "OC_EN_TRANSITO": [
+  {
+   "oc_id": "OC-0142",
+   "proveedor_id": "PRV-02",
+   "estado": "ENVIADA",
+   "fecha_envio": "2026-10-18",
+   "fecha_estimada": "2026-10-24",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "cantidad_pendiente": 60
+  },
+  {
+   "oc_id": "OC-0145",
+   "proveedor_id": "PRV-02",
+   "estado": "RECIBIDA_PARCIAL",
+   "fecha_envio": "2026-10-15",
+   "fecha_estimada": "2026-10-23",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "cantidad_pendiente": 6
+  },
+  {
+   "oc_id": "OC-0145",
+   "proveedor_id": "PRV-02",
+   "estado": "RECIBIDA_PARCIAL",
+   "fecha_envio": "2026-10-15",
+   "fecha_estimada": "2026-10-23",
+   "sku": "CAD-ACE-45",
+   "almacen_id": "ALM-01",
+   "cantidad_pendiente": 10
+  }
+ ],
+ "EVENTOS_QUIEBRE": [
+  {
+   "evento_id": "EVT-0995",
+   "fecha_hora": "2026-10-21T18:02:00-05:00",
+   "sku": "DIJ-LET-DOR",
+   "almacen_id": "ALM-01",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": true
+  },
+  {
+   "evento_id": "EVT-1001",
+   "fecha_hora": "2026-10-22T10:15:00-05:00",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1002",
+   "fecha_hora": "2026-10-22T10:40:00-05:00",
+   "sku": "ARE-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1003",
+   "fecha_hora": "2026-10-22T11:05:00-05:00",
+   "sku": "ARE-ACE-PLA",
+   "almacen_id": "ALM-01",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1004",
+   "fecha_hora": "2026-10-22T12:30:00-05:00",
+   "sku": "PUL-HIL-ROJ",
+   "almacen_id": "ALM-02",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1005",
+   "fecha_hora": "2026-10-22T13:10:00-05:00",
+   "sku": "ANI-ACE-T7",
+   "almacen_id": "ALM-02",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1006",
+   "fecha_hora": "2026-10-22T15:45:00-05:00",
+   "sku": "PUL-ACE-DOR",
+   "almacen_id": "ALM-01",
+   "tipo": "CONSUMO_RESERVA",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1007",
+   "fecha_hora": "2026-10-22T16:20:00-05:00",
+   "sku": "ARE-RES-MUL",
+   "almacen_id": "ALM-01",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1008",
+   "fecha_hora": "2026-10-22T17:05:00-05:00",
+   "sku": "TOB-CON-MUL",
+   "almacen_id": "ALM-02",
+   "tipo": "QUIEBRE_MINIMO",
+   "procesado": false
+  },
+  {
+   "evento_id": "EVT-1009",
+   "fecha_hora": "2026-10-22T18:30:00-05:00",
+   "sku": "COL-PER-BLA",
+   "almacen_id": "ALM-01",
+   "tipo": "CONSUMO_RESERVA",
+   "procesado": false
+  }
+ ]
+}

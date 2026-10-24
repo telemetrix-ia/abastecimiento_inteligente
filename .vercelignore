@@ -1,0 +1,5 @@
+.estado/
+tests/
+__pycache__/
+*.pyc
+.env
